@@ -32,6 +32,7 @@ class TceApp(App):
     def compose(self) -> ComposeResult:
         """Compose our UI."""
         path = "./" if len(sys.argv) < 2 else sys.argv[1]
+        #path = "/app"
         yield Header()
         yield Container(
             DirectoryTree(path, id="tree-view"),

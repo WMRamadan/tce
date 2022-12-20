@@ -1,4 +1,4 @@
-"""TEC app, built with Textual."""
+"""TCE app, built with Textual."""
 
 ######################################################################
 # Main app information.

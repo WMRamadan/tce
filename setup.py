@@ -43,13 +43,13 @@ setup(
     maintainer                    = tce.__maintainer__,
     maintainer_email              = tce.__email__,
     packages                      = find_packages(),
-    package_data                  = { "tce": [ "py.typed" ] },
+    package_data                  = { "tce": [ "tce.css" ] },
     include_package_data          = True,
     install_requires              = [ "textual==0.7.0" ],
     python_requires               = ">=3.9",
     keywords                      = "terminal code editor",
     entry_points                  = {
-        "console_scripts": "tce=tce.app.tce:main"
+        "console_scripts": "tce=tce.tce:main"
     },
     license                       = (
         "License :: OSI Approved :: GPLv3 License"
