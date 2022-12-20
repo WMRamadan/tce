@@ -3,7 +3,7 @@
 ##############################################################################
 # Python imports.
 from pathlib    import Path
-from setuptools import setup, find_packages
+from setuptools import setup
 
 ##############################################################################
 # Import the library itself to pull details out of it.
@@ -42,9 +42,10 @@ setup(
     author_email                  = tce.__email__,
     maintainer                    = tce.__maintainer__,
     maintainer_email              = tce.__email__,
-    packages                      = find_packages(),
-    package_data                  = { "tce": [ "tce.css" ] },
+    packages                      = ["tce"],
+    data_files                    = ["tce/tce.css"],
     include_package_data          = True,
+    zip_safe                      = False,
     install_requires              = [ "textual==0.7.0" ],
     python_requires               = ">=3.9",
     keywords                      = "terminal code editor",
