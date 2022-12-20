@@ -30,7 +30,7 @@ class TceApp(App):
         self.set_class(show_tree, "-show-tree")
 
     def compose(self) -> ComposeResult:
-        """Compose our UI."""
+        """Compose the UI."""
         path = os.getcwd()
         yield Header()
         yield Container(
@@ -45,7 +45,7 @@ class TceApp(App):
     def on_directory_tree_file_selected(
         self, event: DirectoryTree.FileSelected
     ) -> None:
-        """Called when the user click a file in the directory tree."""
+        """Called when the user clicks a file in the directory tree."""
         event.stop()
         code_view = self.query_one("#code", Static)
         try:
