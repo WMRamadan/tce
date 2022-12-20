@@ -53,10 +53,10 @@ setup(
         "console_scripts": "tce=tce.tce:main"
     },
     license                       = (
-        "License :: OSI Approved :: GPLv3 License"
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
     ),
     classifiers                   = [
-        "License :: OSI Approved :: GPLv3 License",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Environment :: Console",
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
