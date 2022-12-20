@@ -16,7 +16,7 @@ from textual.widgets import DirectoryTree, Footer, Header, Static
 
 class TceApp(App):
     """Terminal code editor app."""
-
+    TITLE = "Terminal Code Editor"
     CSS_PATH = "tce.css"
     BINDINGS = [
         ("ctrl+f", "toggle_files", "Toggle Files"),
