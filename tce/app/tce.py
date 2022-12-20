@@ -68,6 +68,5 @@ class TceApp(App):
         """Called in response to key binding."""
         self.show_tree = not self.show_tree
 
-
-if __name__ == "__main__":
+def main() -> None:
     TceApp().run()
