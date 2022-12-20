@@ -1,2 +1,3 @@
-# tec
+# TCE
+
 Terminal Code Editor
